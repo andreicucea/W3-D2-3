@@ -75,9 +75,6 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
-*:focus {
-  outline: none;
-}
 * {
   box-sizing: border-box;
 }
@@ -180,15 +177,30 @@ body {
   background-size: cover;
 }
 input[type="text"] {
+  position: relative;
+  bottom: 1px;
   background-color: #F8F7F0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 10px solid red;
+  border: none;
+  border-bottom: solid 1px #b1b1b1;
+  padding: 0.5px 3px;
+  margin: 0 5px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b84452;
+  text-align: center;
+}
+form,
+.flight_type,
+.flight_date {
+  padding: 15px 0;
+  color: #545454;
+  line-height: 30px;
 }
 .unu {
   font-family: 'Roboto';
-  width: 500px;
+  width: 400px;
   margin: 0 auto;
   position: relative;
   top: 50%;
@@ -218,4 +230,23 @@ input[type="text"] {
 .title h2 {
   font-size: 24px;
   letter-spacing: 3px;
+}
+select {
+  color: #b84452;
+  font-weight: 500;
+  font-family: 'Roboto';
+  font-size: 15px;
+  padding: 3px;
+}
+.flight_date input {
+  margin-left: 1px;
+}
+.submit form {
+  margin: 0 auto;
+}
+.submit input[type="button"] {
+  background-color: #b84452;
+  border: none;
+  color: #fff;
+  padding: 7px 35px;
 }
