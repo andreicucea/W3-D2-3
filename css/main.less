@@ -117,7 +117,7 @@ form,
 
 .unu {
   font-family: 'Roboto';
-  width: 400px;
+  width: 380px;
   margin: 0 auto;
   position: relative;
   top: 50%;
@@ -154,6 +154,16 @@ form,
   }
 }
 
+.destination {
+  input[name="departure"] {
+    width: 140px;
+  }
+
+  input[name="arival"] {
+    width: 230px;
+  }
+}
+
 select {
   color: @red;
   font-weight: 500;
@@ -166,17 +176,35 @@ select {
   input {
     margin-left: 1px;
   }
+
+  input[name="day"],
+  input[name="month"] {
+    width: 30px;
+  }
+
+  input[type="year"] {
+    width: 45px;
+  }
 }
 
 .submit {
-  form {
-    margin: 0 auto;
-  }
+  width: 162px;
+  margin: 0 auto;
 
   input[type="button"] {
     background-color: @red;
     border: none;
     color: #fff;
-    padding: 7px 35px;
+    padding: 0 35px;
+    line-height: 40px;
   }
+}
+
+.calendar {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/calendar.png);
+  background-size: cover;
+  position: relative;
+  top: 4px;
 }

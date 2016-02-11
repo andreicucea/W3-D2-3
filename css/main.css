@@ -200,7 +200,7 @@ form,
 }
 .unu {
   font-family: 'Roboto';
-  width: 400px;
+  width: 380px;
   margin: 0 auto;
   position: relative;
   top: 50%;
@@ -231,6 +231,12 @@ form,
   font-size: 24px;
   letter-spacing: 3px;
 }
+.destination input[name="departure"] {
+  width: 140px;
+}
+.destination input[name="arival"] {
+  width: 230px;
+}
 select {
   color: #b84452;
   font-weight: 500;
@@ -241,12 +247,29 @@ select {
 .flight_date input {
   margin-left: 1px;
 }
-.submit form {
+.flight_date input[name="day"],
+.flight_date input[name="month"] {
+  width: 30px;
+}
+.flight_date input[type="year"] {
+  width: 45px;
+}
+.submit {
+  width: 162px;
   margin: 0 auto;
 }
 .submit input[type="button"] {
   background-color: #b84452;
   border: none;
   color: #fff;
-  padding: 7px 35px;
+  padding: 0 35px;
+  line-height: 40px;
+}
+.calendar {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/calendar.png);
+  background-size: cover;
+  position: relative;
+  top: 4px;
 }

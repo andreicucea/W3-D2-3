@@ -21,9 +21,9 @@
     <div class="destination">
       <form>
         I want to fly from
-        <input type="text" name="departure" size="16"><br>
+        <input type="text" name="departure" size="14"><br>
         to
-        <input type="text" name="name" size="25">
+        <input type="text" name="arrival" size="25">
       </form>
     </div>
 
@@ -56,10 +56,20 @@
           <option value="flexible">FLEXIBLE</option>
           <option value="fixed">FIXED</option>
         </select><br>
-        Departure date
-        <input type="text" name="day" size="1" maxlength="2">/<input type="text" name="month" size="1" maxlength="2">/<input type="text" name="year" size="2" maxlength="4"><br>
-        Return date
-        <input type="text" name="day" size="1" maxlength="2">/<input type="text" name="month" size="1" maxlength="2">/<input type="text" name="year" size="2" maxlength="4"><br>
+        <div class="float_left">Departure date</div>
+        <div class="float_left">
+          <input type="text" name="day" size="1" maxlength="2">/
+          <input type="text" name="month" size="1" maxlength="2">/
+          <input type="text" name="year" size="2" maxlength="4">
+        </div>
+        <div class="calendar float_left"></div><br>
+        <div class="float_left">Return date</div>
+        <div class="float_left">
+          <input type="text" name="day" size="1" maxlength="2">/
+          <input type="text" name="month" size="1" maxlength="2">/
+          <input type="text" name="year" size="2" maxlength="4">
+        </div>
+        <div class="calendar float_left"></div><br>
       </form>
     </div>
 
